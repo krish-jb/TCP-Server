@@ -86,7 +86,7 @@ int main()
 		
 		const std::string message_to_send = "Hoi, I got the data!\n\n";
 		std::string response = R"(HTTP/1.1 200 OK
-Contet-Type: text/plain
+Content-Type: text/plain
 Content-Length: )";
 		response.append(std::to_string(message_to_send.size()));
 		response.append("\n\n\r" + message_to_send);
